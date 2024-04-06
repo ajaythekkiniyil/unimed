@@ -85,8 +85,66 @@
     margin: 10px 0;
 }
 
-@media (max-width:800px) {
+.overlay {
+    height: 0%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    overflow-y: hidden;
+    transition: 0.5s;
+}
 
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+    top: -20px;
+    position: relative;
+}
+
+.overlay .closebtn {
+    font-size: 30px;
+    color: var(--primary-font-color);
+    font-weight: 300;
+}
+
+.search-box{
+    border-bottom: 1px solid var(--primary-font-color);
+    margin: 40px 0px 0px 15px;
+}
+
+.search-box input{
+    border: none;
+    outline: none;
+}
+
+.search-box input::placeholder{
+    font-size: 14px;
+    color: #b8b8b8;
+}
+.search-box .fa-magnifying-glass{
+    color: rgb(185, 185, 185);
+    padding: 0 10px 0 0;
+}
+
+.search-btn {
+    outline: none;
+    border: none;
+    background: var(--primary-font-color);
+    color: #93e436;
+    padding: 8px 20px;
+    border-radius: 40px;
+    font-size: 12px;
+    margin: 10px 20px; 
+}
+
+@media (max-width:800px) {
     .header .icons,
     .menus {
         font-size: 12px;

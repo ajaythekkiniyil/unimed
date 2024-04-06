@@ -63,7 +63,7 @@
                 </div>
                 <!-- for mobile -->
                 <div class="col-3 d-block d-md-none mobile-menu">
-                    <div class="flex">
+                    <div class="flex" onclick="openNav()">
                         <i class="fa-solid fa-magnifying-glass"></i>
                         <div class="hamburger-menu">
                             <span></span>
@@ -76,6 +76,22 @@
         </div>
     </section>
 
+    <div id="myNav" class="overlay">
+        <div class="container-fluid">
+            <div class="row" style="align-items: center;">
+                <div class="col-10">
+                    <div class="search-box">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input type="text" placeholder="Search" class="ml-5">
+                    </div>
+                    <button class="search-btn">Search</button>
+                </div>
+                <div class="col-2 p-2">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- banner -->
     <section>
