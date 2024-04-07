@@ -8,6 +8,15 @@
     --primary-font-color: #00205b;
 }
 
+.header {
+    position: sticky;
+    top: 0;
+    background: #fff;
+    -webkit-box-shadow: 0px 2px 45px 0px rgb(150, 148, 148);
+    -moz-box-shadow: 0px 2px 45px 0px rgb(150, 148, 148);
+    box-shadow: 0px 2px 45px 0px rgb(150, 148, 148);
+}
+
 .header ul .menu {
     list-style: none;
     display: inline-flex;
@@ -42,6 +51,7 @@
     border: none;
     background: none;
     font-weight: 500;
+    color: var(--primary-font-color);
 }
 
 .header .dropdown-menu.show {
@@ -145,20 +155,6 @@
     margin: 10px 20px;
 }
 
-@media (max-width:800px) {
-
-    .header .icons,
-    .menus {
-        font-size: 12px;
-    }
-
-    .header ul .menu {
-        list-style: none;
-        display: inline-flex;
-        padding: 7px;
-    }
-}
-
 .banner {
     /* background-image: url(./assets/banner.jpg); */
     background-color: #4685ac;
@@ -174,12 +170,126 @@
     font-size: 45px;
 }
 
+.ahd {
+    background-color: #f3f3f3;
+    padding: 100px 0;
+}
+
+.ahd img {
+    border-radius: 20px;
+}
+
+.ahd .title {
+    color: var(--primary-font-color);
+}
+
+.ahd .title span {
+    color: #97d700;
+}
+
+.ahd .para {
+    color: rgb(73, 73, 73);
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.ahd .sub-para {
+    color: rgb(73, 73, 73);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.ahd strong {
+    color: rgb(73, 73, 73);
+    font-size: 15px;
+}
+
+.ahd .find-us {
+    outline: none;
+    border: none;
+    background: var(--primary-font-color);
+    border: var(--primary-font-color);
+    padding: 10px 25px;
+    border-radius: 20px;
+    color: #97d700;
+    display: inline-block;
+    box-shadow: inset 0 0 0 0 var(--primary-font-color);
+    -webkit-transition: ease-out 0.4s;
+    -moz-transition: ease-out 0.4s;
+    transition: ease-out 0.4s;
+}
+
+.ahd .find-us:hover {
+    box-shadow: inset 400px 0 0 0 #97d700;
+    color: var(--primary-font-color);
+}
+
+@media (max-width:800px) {
+
+    .header .icons,
+    .menus {
+        font-size: 12px;
+    }
+
+    .header ul .menu {
+        list-style: none;
+        display: inline-flex;
+        padding: 7px;
+    }
+
+    .ahd {
+        padding: 0;
+    }
+
+    .ahd-banner {
+        padding: 40px 0 0;
+    }
+
+    .ahd-banner img {
+        width: 100%;
+    }
+
+    .ahd br {
+        display: none;
+    }
+}
+
+
 @media (max-width:500px) {
     .banner .title {
         margin-top: 50vh;
         font-size: 35px;
     }
-    .banner .para{
+
+    .banner .para {
         font-size: 14px;
+    }
+
+    .br-1 {
+        display: block !important;
+    }
+
+    .ahd .title {
+        font-size: 30px;
+    }
+
+    .ahd-banner {
+        display: none;
+    }
+
+    .ahd .find-us {
+        font-size: 13px;
+    }
+
+    .ahd .para {
+        font-size: 16px;
+    }
+
+    .ahd strong {
+        font-size: 14px;
+    }
+
+    .ahd .sub-para {
+        font-size: 15px;
     }
 }
