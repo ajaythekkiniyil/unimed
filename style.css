@@ -6,6 +6,7 @@
 
 :root {
     --primary-font-color: #00205b;
+    --secondary-font-color: #97d700;
 }
 
 .header {
@@ -39,7 +40,7 @@
 .contact-btn {
     outline: none;
     border: none;
-    background: #97d700;
+    background: var(--secondary-font-color);
     color: #fff;
     padding: 5px 20px;
     border-radius: 50px;
@@ -184,7 +185,7 @@
 }
 
 .ahd .title span {
-    color: #97d700;
+    color: var(--secondary-font-color);
 }
 
 .ahd .para {
@@ -204,24 +205,109 @@
     font-size: 15px;
 }
 
-.ahd .find-us {
-    outline: none;
-    border: none;
+.ahd .button {
+    position: relative;
+    overflow: hidden;
+    height: 3rem;
+    padding: 0 2rem;
+    border-radius: 1.5rem;
     background: var(--primary-font-color);
-    border: var(--primary-font-color);
-    padding: 10px 25px;
-    border-radius: 20px;
-    color: #97d700;
-    display: inline-block;
-    box-shadow: inset 0 0 0 0 var(--primary-font-color);
-    -webkit-transition: ease-out 0.4s;
-    -moz-transition: ease-out 0.4s;
-    transition: ease-out 0.4s;
+    color: var(--secondary-font-color);
+    background-size: 400%;
+    border: none;
+    outline: none;
+    cursor: pointer;
 }
 
-.ahd .find-us:hover {
-    box-shadow: inset 400px 0 0 0 #97d700;
+.ahd .button:hover{
     color: var(--primary-font-color);
+    font-weight: 500;
+}
+
+.ahd .button:hover::before {
+    transform: scaleX(1);
+}
+
+.ahd .button-content {
+    position: relative;
+    z-index: 1;
+}
+
+.ahd .button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: 0 50%;
+    width: 100%;
+    height: inherit;
+    border-radius: inherit;
+    background: var(--secondary-font-color);
+    transition: all 0.475s;
+}
+
+.ahd .br-1 {
+    display: none;
+}
+
+.health-essentials {
+    padding: 100px 0;
+}
+
+.health-essentials .image {
+    border-radius: 20px;
+}
+
+.health-essentials .inner {
+    border-radius: 8px;
+    border: 1px solid #d2d2d2;
+    margin: 10px 0;
+    padding: 15px;
+    height: 98px;
+}
+
+.health-essentials .inner .flex {
+    display: flex;
+    justify-content: space-around;
+}
+
+.health-essentials .inner .flex .para {
+    font-weight: 500;
+    font-size: 15px;
+    color: #535353;
+}
+
+.devices {
+    border-radius: 50%;
+    padding: 15px;
+}
+
+.health-essentials .inner .flex img {
+    width: 33px;
+}
+
+.health-essentials .title {
+    color: var(--primary-font-color);
+    font-size: 48px;
+}
+
+.health-essentials .title span {
+    color: var(--secondary-font-color);
+}
+
+.health-essentials .para {
+    font-size: 15px;
+    font-weight: 500;
+    color: #535353;
+}
+
+.device-1 {
+    background: var(--primary-font-color);
+}
+
+.device-2 {
+    background: var(--secondary-font-color);
 }
 
 @media (max-width:800px) {
@@ -251,6 +337,18 @@
 
     .ahd br {
         display: none;
+    }
+
+    .health-essentials {
+        padding: 80px 0 45px;
+    }
+
+    .health-essentials .image {
+        width: 100%;
+    }
+
+    .health-essentials .title {
+        font-size: 35px;
     }
 }
 
@@ -292,4 +390,9 @@
     .ahd .sub-para {
         font-size: 15px;
     }
+
+    .health-essentials .inner br {
+        display: none;
+    }
+
 }
