@@ -405,10 +405,11 @@ footer .socials ul li:last-child {
 
 .slider-sec {
     padding: 100px 0;
+    overflow: hidden !important;
 }
 
 .slick-slider {
-    overflow: hidden;
+    overflow: hidden !important;
 }
 
 .slick-slider img {
@@ -482,6 +483,10 @@ footer .socials ul li:last-child {
 
     footer img {
         height: 50px;
+    }
+
+    .slider-sec{
+        padding: 45px 0;
     }
 }
 
