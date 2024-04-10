@@ -220,46 +220,38 @@
     </section>
 
     <!-- slider -->
-    <section class="slider-sec">
-        <div class="slick-slider">
-            <div>
-                <img src="./assets/slider-1.PNG" alt="">
-            </div>
-            <div>
-                <img src="./assets/slider-2.PNG" alt="">
-            </div>
-            <div>
-                <img src="./assets/slider-3.PNG" alt="">
-            </div>
-            <div>
-                <img src="./assets/slider-1.PNG" alt="">
-            </div>
-            <div>
-                <img src="./assets/slider-2.PNG" alt="">
-            </div>
-            <div>
-                <img src="./assets/slider-3.PNG" alt="">
-            </div>
-            <div>
-                <img src="./assets/slider-1.PNG" alt="">
-            </div>
-            <div>
-                <img src="./assets/slider-2.PNG" alt="">
-            </div>
-            <div>
-                <img src="./assets/slider-3.PNG" alt="">
-            </div>
-            <div>
-                <img src="./assets/slider-1.PNG" alt="">
-            </div>
-            <div>
-                <img src="./assets/slider-2.PNG" alt="">
-            </div>
-            <div>
-                <img src="./assets/slider-3.PNG" alt="">
+    <!-- <section class="slider-sec m-0 p-0">
+        <div class="container-fluid p-0 m-0">
+            <div class="row ">
+                <div class="slick-slider p-0 m-0">
+                    <div>
+                        <img src="./assets/slider-1.PNG" alt="">
+                    </div>
+                    <div>
+                        <img src="./assets/slider-2.PNG" alt="">
+                    </div>
+                    <div>
+                        <img src="./assets/slider-3.PNG" alt="">
+                    </div>
+                    <div>
+                        <img src="./assets/slider-1.PNG" alt="">
+                    </div>
+                    <div>
+                        <img src="./assets/slider-2.PNG" alt="">
+                    </div>
+                    <div>
+                        <img src="./assets/slider-3.PNG" alt="">
+                    </div>
+                    <div>
+                        <img src="./assets/slider-1.PNG" alt="">
+                    </div>
+                    <div>
+                        <img src="./assets/slider-2.PNG" alt="">
+                    </div>
+                </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
     <!-- footer -->
     <footer>
@@ -270,14 +262,24 @@
                         <div class="col-md-4 col-lg-6">
                             <img src="./assets/logo-blue.PNG" alt="">
                         </div>
-                        <div class="col-md-8 col-lg-6 menu">
+                        <!-- hidden in mobile -->
+                        <div class="col-md-8 col-lg-6 menu d-none d-md-block">
                             <ul>
                                 <li>PHARMA</li>
                                 <li>MEDICAL</li>
                                 <li>CONSUMER</li>
-                                <li>HEALTH RETAIL</li>
+                                <li>HEALTHCARE RETAIL</li>
                             </ul>
                         </div>
+                        <!-- visible only in mobile -->
+                        <ul class="menu-mobile">
+                            <li>PHARMA</li>
+                            <li>MEDICAL</li>
+                            <li>CONSUMER</li>
+                        </ul>
+                        <ul class="menu-mobile">
+                            <li>HEALTHCARE RETAIL</li>
+                        </ul>
                     </div>
                     <hr class="hr">
                 </div>
@@ -293,7 +295,7 @@
                 </div>
 
                 <!-- Quick Links -->
-                <div class="col-md-4 col-lg-3">
+                <div class="col-md-4 col-lg-3 d-none d-md-block">
                     <h3 class="title">Quick Links</h3>
                     <a href="#" class="para">Partners</a>
                     <a href="#" class="para">Products</a>
@@ -301,14 +303,36 @@
                     <a href="#" class="para">UMD standards</a>
                 </div>
 
-                <div class="col-md-2 col-lg-4">
+                <div class="col-md-2 col-lg-4 d-none d-md-block">
                     <!-- hidden element -->
                     <h3 class="title" style="visibility: hidden;">....</h3>
                     <a href="#" class="para">Careers</a>
                     <a href="#" class="para">Media</a>
                     <a href="#" class="para">Contact us</a>
                 </div>
-                <hr class="hr">
+
+                <!-- quick links for mobile only -->
+                <div class="row quick-link-mobile">
+                    <div class="col-11">
+                        <h6 class="quick-link-title">Quick Links</h6>
+                    </div>
+                    <div class="col-1" id="quick-link-mobile-dropdown-btn">
+                        <i class="fa fa-chevron-down" style="background: #062b70; padding: 3px; border-radius: 10px;"></i>
+                    </div>
+                    <div id="quick-link-mobile-dropdown-items">
+                        <a href="#" class="para">Partners</a>
+                        <a href="#" class="para">Products</a>
+                        <a href="#" class="para">About us</a>
+                        <a href="#" class="para">UMD standards</a>
+                        <a href="#" class="para">Careers</a>
+                        <a href="#" class="para">Media</a>
+                        <a href="#" class="para">Contact us</a>
+                    </div>
+                    <hr class="hr">
+                </div>
+                <!-- quick links for mobile only -->
+
+                <hr class="hr d-none d-md-block">
             </div>
 
             <div class="row p-0 m-0 bottom">
